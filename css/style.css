@@ -1,0 +1,77 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap');
+*{
+    font-family: "roboto",sans-serif;
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+}
+body{
+    background:#f4f4f4;
+}
+.container{
+    max-width:700px ;
+    margin: 20px auto;
+
+}
+.container .heading{
+    text-align: center;
+    font-size: 30px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+.container .accordion-wrapper{
+    padding: 0 10px;
+}
+.container .accordion{
+    border: 1px solid #bbb;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+.container .accordion.active .accordion-heading{
+    /* background: #3e57d0; */
+    /* color: #fff; */
+}
+.container .accordion.active .accordion-heading i{
+    color : #000;
+    transform: rotate(180deg);
+    transition: transform 0.2s 0.1s;
+}
+.container .accordion.active .accordion-content{
+    display:block;
+}
+.container .accordion-heading{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    /* background: #fff; */
+    /* border: 1px solid #bbb;
+    border-radius: 8px; */
+    padding: 12px 15px;
+    color: #bbb;
+}
+.container .accordion-heading h3{
+    font-size: 15px;
+}
+.container .accordion-content{
+    padding: 15px 20px;
+    /* border: 1px solid #bbb;
+    border-radius: 8px; */
+
+    font-size: 12px;
+    background: #fff;
+    color: #aeafb0;
+    border-top: 0;
+    display: none;
+    animation: animate 0.2s linear backwards;
+    line-height: 2;
+    transform-origin: top;
+}
+@keyframes animate {
+    0%{
+        transform: scaleY(0);
+    }
+}

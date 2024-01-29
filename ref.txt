@@ -1,0 +1,18 @@
+1.
+google>>cdnjs>>import
+
+
+2.
+google>>font-awesomelibraries>>
+	-get https://fonts.google.com/knowledge
+	-click on 'Fonts' option seen on the sidebar
+	-choose the font we want (eg: poppins, roboto,..etc)
+	-click on the plus(+) symbols to get the variants in that corresponsding font family(on clicking a plus for the 1st time appears a side panel,named 'Selected Families')
+	-in this side panel, you can see 2 options in 'Use on the web' section as radio buttons(link and import). choose the radio btn 'import', copy it & paste it on top of our .css file 
+(i used poppins & roboto ,and it appears as :
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+</style>
+NOTE: Remove style tag. Only @import url('.....')is enough to paste in .css file
+
+)
